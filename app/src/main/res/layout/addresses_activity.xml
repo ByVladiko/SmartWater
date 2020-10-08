@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="sans-serif-medium"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context=".ui.profile.addresses.NewAddressActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_add_address"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/address_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:hint="Город"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/address_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:hint="Улица"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/address_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Номер дома"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/gray" />
+
+            <EditText
+                android:id="@+id/address_apartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Номер кваритры"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/gray" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_add_address"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:text="Добавить"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

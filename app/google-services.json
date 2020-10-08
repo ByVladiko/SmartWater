@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1051942208394",
+    "firebase_url": "https://smartaqua-ef40e.firebaseio.com",
+    "project_id": "smartaqua-ef40e",
+    "storage_bucket": "smartaqua-ef40e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051942208394:android:056b97b92e41a7e51d7e73",
+        "android_client_info": {
+          "package_name": "com.example.smartwater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051942208394-m3lmejpg70fgo3beceo3l5hfvih845qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4ORSD-pwHcjmIBoOQ9vZ2UBKmC2QOYLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051942208394-m3lmejpg70fgo3beceo3l5hfvih845qa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

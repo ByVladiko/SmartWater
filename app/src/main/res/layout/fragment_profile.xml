@@ -1,0 +1,112 @@
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="sans-serif-medium"
+    tools:context=".ui.profile.ProfileFragment">
+
+
+    <LinearLayout
+        android:id="@+id/edit_text_linear"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <com.github.pinball83.maskededittext.MaskedEditText
+            android:id="@+id/phone"
+            android:enabled="false"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            app:mask="+*(***) ***-****"
+            app:notMaskedSymbol="*"
+            android:textColor="@color/colorAccent"
+            android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="10dp"
+            android:hint="Имя"
+            android:textColor="@color/colorAccent"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="10dp"
+            android:hint="Фамилия"
+            android:textColor="@color/colorAccent"
+            android:inputType="text"
+            android:padding="20dp"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="10dp"
+            android:hint="E-mail"
+            android:textColor="@color/colorAccent"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/gray"
+            android:padding="20dp" />
+
+        <Button
+            android:id="@+id/button_addresses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Адреса доставки"
+            android:textAllCaps="false"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:text="Изменить"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+</RelativeLayout>

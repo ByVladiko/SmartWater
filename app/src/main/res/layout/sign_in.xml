@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fontFamily="sans-serif-medium"
+    tools:context=".ui.login.SignInActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="275dp"
+        android:layout_height="216dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/main_linear"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:text="Добро пожаловать!"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <com.github.pinball83.maskededittext.MaskedEditText
+            android:id="@+id/phone"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/ic_person"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            app:mask="+7(9**) ***-****"
+            app:notMaskedSymbol="*"
+            android:textColor="@color/colorAccent"
+            android:padding="20dp"
+            android:textColorHint="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:hint="Пароль"
+            android:textColor="@color/colorAccent"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:textColorHint="@color/colorAccent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_linear"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:layout_marginTop="20dp"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_in_button"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="15dp"
+        android:text="Регистрация"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Неверный логин/пароль"
+        android:visibility="invisible"
+        style="@style/TextView.Error"
+        android:textSize="15dp" />
+
+</RelativeLayout>
